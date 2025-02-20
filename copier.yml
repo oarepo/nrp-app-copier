@@ -1,0 +1,26 @@
+repository_name:
+  type: str
+  help: Short name of the repository, must be a python identifier
+  default: my_repo
+
+repository_human_name:
+  type: str
+  help: Human readable name of the repository
+  default: My Repository
+
+repository_description:
+  type: str
+  multiline: true
+  help: Description of the repository
+  default: My Repository description
+
+languages:
+  type: str
+  help: List of languages to use in the repository, 2 letter code
+
+_jinja_extensions:
+  - copier_templates_extensions.TemplateExtensionLoader
+  - nrp_devtools.copier_extensions.NRPExtension
+  - nrp_devtools.copier_extensions.ContextUpdater
+
+_templates_suffix: .copier
