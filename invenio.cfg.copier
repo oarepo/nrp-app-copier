@@ -7,10 +7,7 @@ config.initialize_glitchtip()
 # i18n
 config.initialize_i18n()
 
-env = config.load_configuration_variables()
-
 config.configure_generic_parameters(
-    env,
     code="{{repository_name}}",
     name=_("{{ repository_human_name }}"),
     description=_("{{ repository_description }}"),
