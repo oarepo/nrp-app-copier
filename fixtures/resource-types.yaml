@@ -1,25 +1,21 @@
 id: book
 nonpreferredLabels:
-- cs: monografie
+  - cs: monografie
 props:
   coarType: book
   dataCiteType: Book
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_2f33
+  submission: "true"
 title:
   cs: Kniha
   en: Book
 ---
 id: book-chapter
 nonpreferredLabels:
-- cs: kapitoly v monografiích
+  - cs: kapitoly v monografiích
 props:
   coarType: book part
   dataCiteType: BookChapter
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_3248
+  submission: "true"
 title:
   cs: Kapitola v knize
   en: Book chapter
@@ -28,9 +24,7 @@ id: article
 props:
   coarType: journal article
   dataCiteType: JournalArticle
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_6501
+  submission: "true"
 title:
   cs: Článek
   en: Article
@@ -39,15 +33,13 @@ hierarchy:
   parent: article
 id: draft
 nonpreferredLabels:
-- cs: Autorský originál
-- cs: Původní článek (draft)
-- en: AO
+  - cs: Autorský originál
+  - cs: Původní článek (draft)
+  - en: AO
 props:
   coarType: journal article
   dataCiteType: JournalArticle
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_6501
+  submission: "true"
 title:
   cs: Článek - draft
   en: Article - draft
@@ -56,15 +48,13 @@ hierarchy:
   parent: article
 id: submitted-version
 nonpreferredLabels:
-- cs: Preprint
-- cs: Podaný článek
-- en: SMUR
+  - cs: Preprint
+  - cs: Podaný článek
+  - en: SMUR
 props:
   coarType: preprint
   dataCiteType: Preprint
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_816b
+  submission: "true"
 title:
   cs: Článek - submitted version
   en: Article - submitted version
@@ -73,15 +63,13 @@ hierarchy:
   parent: article
 id: accepted-version
 nonpreferredLabels:
-- cs: Postprint
-- cs: Článek po recenzním řízení
-- en: AM
+  - cs: Postprint
+  - cs: Článek po recenzním řízení
+  - en: AM
 props:
   coarType: journal article
   dataCiteType: JournalArticle
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_6501
+  submission: "true"
 title:
   cs: Článek - accepted version
   en: Article - accepted version
@@ -90,15 +78,13 @@ hierarchy:
   parent: article
 id: published-version
 nonpreferredLabels:
-- cs: Vydaný článek
-- cs: Publikovaná verze článku
-- en: VoR
+  - cs: Vydaný článek
+  - cs: Publikovaná verze článku
+  - en: VoR
 props:
   coarType: journal article
   dataCiteType: JournalArticle
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_6501
+  submission: "true"
 title:
   cs: Článek - published version
   en: Article - published version
@@ -107,15 +93,13 @@ hierarchy:
   parent: article
 id: updated-version
 nonpreferredLabels:
-- cs: Aktualizovaná publikovaná verze článku
-- cs: Aktualizovaný vydaný článek
-- en: EVoR
+  - cs: Aktualizovaná publikovaná verze článku
+  - cs: Aktualizovaný vydaný článek
+  - en: EVoR
 props:
   coarType: journal article
   dataCiteType: JournalArticle
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_6501
+  submission: "true"
 title:
   cs: Článek - updated version
   en: Article - updated version
@@ -124,15 +108,13 @@ hierarchy:
   parent: article
 id: corrected-version
 nonpreferredLabels:
-- cs: Opravený vydaný článek
-- cs: Opravená publikovaná verze článku
-- en: CVoR
+  - cs: Opravený vydaný článek
+  - cs: Opravená publikovaná verze článku
+  - en: CVoR
 props:
   coarType: journal article
   dataCiteType: JournalArticle
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_6501
+  submission: "true"
 title:
   cs: Článek - corrected version
   en: Article - corrected version
@@ -141,22 +123,18 @@ id: review
 props:
   coarType: review
   dataCiteType: Text
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_efa0
+  submission: "true"
 title:
   cs: Recenze
   en: Review
 ---
 id: datasets
 nonpreferredLabels:
-- cs: data
+  - cs: data
 props:
   coarType: dataset
   dataCiteType: Dataset
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_ddb1
+  submission: "false"
 title:
   cs: Datová sada
   en: Dataset
@@ -172,9 +150,7 @@ id: paper
 props:
   coarType: conference output
   dataCiteType: ConferencePaper
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_c94f
+  submission: "true"
 title:
   cs: Konferenční příspěvek
   en: Conference paper
@@ -185,9 +161,7 @@ id: proceeding
 props:
   coarType: conference proceedings
   dataCiteType: ConferenceProceedings
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_f744
+  submission: "true"
 title:
   cs: Konferenční sborník
   en: Conference proceeding
@@ -198,9 +172,7 @@ id: programme
 props:
   coarType: conference output
   dataCiteType: Event
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_c94f
+  submission: "true"
 title:
   cs: Konferenční program
   en: Conference programme
@@ -211,9 +183,7 @@ id: poster
 props:
   coarType: conference output
   dataCiteType: Other
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_c94f
+  submission: "true"
 title:
   cs: Konferenční poster
   en: Conference poster
@@ -224,22 +194,18 @@ id: presentation
 props:
   coarType: conference presentation
   dataCiteType: Other
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/R60J-J5BD
+  submission: "true"
 title:
   cs: Konferenční prezentace
   en: Conference presentation
 ---
 id: data-paper
 nonpreferredLabels:
-- cs: článek o datové sadě
+  - cs: článek o datové sadě
 props:
   coarType: data paper
   dataCiteType: DataPaper
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_beb9
+  submission: "false"
 title:
   cs: Data paper
   en: Data paper
@@ -248,9 +214,7 @@ id: data-management-plan
 props:
   coarType: data management plan
   dataCiteType: OutputManagementPlan
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_ab20
+  submission: "false"
 title:
   cs: Data management plan
   en: Data management plan
@@ -259,9 +223,7 @@ id: software
 props:
   coarType: software
   dataCiteType: Software
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_5ce6
+  submission: "false"
 title:
   cs: Software
   en: Software
@@ -270,9 +232,7 @@ id: software-paper
 props:
   coarType: software paper
   dataCiteType: Text
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_7bab
+  submission: "false"
 title:
   cs: Software paper
   en: Software paper
@@ -281,9 +241,8 @@ id: interactive-resource
 props:
   coarType: interactive resource
   dataCiteType: InteractiveResource
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_e9a0
+  submission: "false"
+
 title:
   cs: Interaktivní zdroj
   en: Interactive resource
@@ -292,9 +251,8 @@ id: model
 props:
   coarType: other
   dataCiteType: Model
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "false"
+
 title:
   cs: Model
   en: Model
@@ -303,17 +261,16 @@ id: physical-object
 props:
   coarType: other
   dataCiteType: PhysicalObject
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "false"
+
 title:
   cs: Fyzický objekt
   en: Physical object
 ---
 id: theses
 nonpreferredLabels:
-- cs: VŠKP
-- en: ETDs
+  - cs: VŠKP
+  - en: ETDs
 title:
   cs: Závěrečné práce
   en: Theses (etds)
@@ -324,9 +281,8 @@ id: bachelor
 props:
   coarType: bachelor thesis
   dataCiteType: Dissertation
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_7a1f
+  submission: "false"
+
 title:
   cs: Bakalářská práce
   en: Bachelor thesis
@@ -337,9 +293,8 @@ id: master
 props:
   coarType: master thesis
   dataCiteType: Dissertation
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_bdcc
+  submission: "false"
+
 title:
   cs: Diplomová práce
   en: Master thesis
@@ -348,13 +303,12 @@ hierarchy:
   parent: theses
 id: rigorous
 nonpreferredLabels:
-- en: advanced master thesis
+  - en: advanced master thesis
 props:
   coarType: thesis
   dataCiteType: Dissertation
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_46ec
+  submission: "false"
+
 title:
   cs: Rigorózní práce
   en: Rigorous thesis
@@ -363,13 +317,12 @@ hierarchy:
   parent: theses
 id: doctoral
 nonpreferredLabels:
-- en: dissertation
+  - en: dissertation
 props:
   coarType: doctoral thesis
   dataCiteType: Dissertation
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_db06
+  submission: "false"
+
 title:
   cs: Disertační práce
   en: Doctoral thesis
@@ -378,13 +331,12 @@ hierarchy:
   parent: theses
 id: post-doctoral
 nonpreferredLabels:
-- en: habilitation thesis
+  - en: habilitation thesis
 props:
   coarType: thesis
   dataCiteType: Dissertation
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_46ec
+  submission: "false"
+
 title:
   cs: Habilitační práce
   en: Post-doctoral thesis
@@ -400,9 +352,8 @@ id: certified-methodology
 props:
   coarType: workflow
   dataCiteType: Workflow
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_393c
+  submission: "true"
+
 title:
   cs: Certifikovaná metodika
   en: Certified methodology
@@ -413,9 +364,8 @@ id: methodology-without-certification
 props:
   coarType: workflow
   dataCiteType: Workflow
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_393c
+  submission: "true"
+
 title:
   cs: Metodika bez certifikace
   en: Methodology without certification
@@ -424,13 +374,12 @@ hierarchy:
   parent: methodologies-and-procedures
 id: preservation-procedure
 nonpreferredLabels:
-- en: conservation or preservation procedure
+  - en: conservation or preservation procedure
 props:
   coarType: workflow
   dataCiteType: Workflow
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_393c
+  submission: "true"
+
 title:
   cs: Památkový postup
   en: Heritage procedure
@@ -441,9 +390,8 @@ id: treatment-procedure
 props:
   coarType: workflow
   dataCiteType: Workflow
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_393c
+  submission: "true"
+
 title:
   cs: Léčebný postup
   en: Treatment procedure
@@ -459,9 +407,8 @@ id: annual
 props:
   coarType: report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_93fc
+  submission: "true"
+
 title:
   cs: Výroční zpráva
   en: Annual report
@@ -472,9 +419,8 @@ id: research
 props:
   coarType: research report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_18ws
+  submission: "true"
+
 title:
   cs: Výzkumná zpráva
   en: Research report
@@ -485,9 +431,8 @@ id: project
 props:
   coarType: project deliverable
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_18op
+  submission: "true"
+
 title:
   cs: Projektová zpráva
   en: Project report
@@ -496,13 +441,12 @@ hierarchy:
   parent: reports
 id: statistical-or-status
 nonpreferredLabels:
-- en: statistical report
+  - en: statistical report
 props:
   coarType: report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_93fc
+  submission: "true"
+
 title:
   cs: Statistická zpráva, zpráva o stavu
   en: Statistical or status report
@@ -513,9 +457,8 @@ id: conservation
 props:
   coarType: report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_93fc
+  submission: "true"
+
 title:
   cs: Restaurátorská zpráva
   en: Conservation report
@@ -526,9 +469,8 @@ id: field
 props:
   coarType: report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_93fc
+  submission: "true"
+
 title:
   cs: Terénní zpráva
   en: Field report
@@ -539,9 +481,8 @@ id: business-trip
 props:
   coarType: report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_93fc
+  submission: "true"
+
 title:
   cs: Cestovní zpráva
   en: Business trip report
@@ -552,9 +493,8 @@ id: press-release
 props:
   coarType: report
   dataCiteType: Report
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_93fc
+  submission: "true"
+
 title:
   cs: Tisková zpráva
   en: Press release
@@ -568,13 +508,12 @@ hierarchy:
   parent: other-specialized-materials
 id: trade-literature
 nonpreferredLabels:
-- en: commercial print or catalogue
+  - en: commercial print or catalogue
 props:
   coarType: other
   dataCiteType: Text
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "true"
+
 title:
   cs: Firemní tisk
   en: Trade literature
@@ -585,9 +524,8 @@ id: studies-and-analyses
 props:
   coarType: other
   dataCiteType: Text
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "true"
+
 title:
   cs: Studie, analýza
   en: Studies and analyses
@@ -598,9 +536,8 @@ id: specialized-map
 props:
   coarType: cartographic material
   dataCiteType: Other
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_12cc
+  submission: "true"
+
 title:
   cs: Specializovaná mapa
   en: Specialized map
@@ -611,9 +548,8 @@ id: educational-material
 props:
   coarType: other
   dataCiteType: Text
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "true"
+
 title:
   cs: Edukativní materiály
   en: Educational material
@@ -624,9 +560,8 @@ id: exhibition-catalogue-or-guide
 props:
   coarType: other
   dataCiteType: Text
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "true"
+
 title:
   cs: Katalog z výstavy, průvodce expozicí
   en: Exhibition catalogue or guide
@@ -637,9 +572,8 @@ id: other
 props:
   coarType: other
   dataCiteType: Other
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "true"
+
 title:
   cs: Ostatní
   en: Other
@@ -648,13 +582,12 @@ hierarchy:
   parent: other-specialized-materials
 id: cartographic-material
 nonpreferredLabels:
-- cs: mapy
+  - cs: mapy
 props:
   coarType: cartographic material
   dataCiteType: Other
-  submission: 'true'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_12cc
+  submission: "true"
+
 title:
   cs: Kartografický dokument
   en: Cartographic material
@@ -665,9 +598,8 @@ id: patent
 props:
   coarType: patent
   dataCiteType: Text
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_15cd
+  submission: "false"
+
 title:
   cs: Patent
   en: Patent
@@ -678,9 +610,8 @@ id: standard
 props:
   coarType: other
   dataCiteType: Standard
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "false"
+
 title:
   cs: Norma
   en: Standard
@@ -689,9 +620,8 @@ id: journal
 props:
   coarType: journal
   dataCiteType: Journal
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_0640
+  submission: "false"
+
 title:
   cs: Časopis
   en: Journal
@@ -702,9 +632,8 @@ id: computational-notebooks
 props:
   coarType: other
   dataCiteType: Computational notebooks
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "false"
+
 title:
   cs: Laboratorní deník
   en: Computational notebooks
@@ -713,9 +642,8 @@ id: instrument
 props:
   coarType: other
   dataCiteType: Instrument
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_1843
+  submission: "false"
+
 title:
   cs: Přístroj
   en: Instrument
@@ -726,9 +654,8 @@ id: study-registration
 props:
   coarType: research proposal
   dataCiteType: Study registration
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_baaf
+  submission: "false"
+
 title:
   cs: Registrovaná studie
   en: Study registration
@@ -737,9 +664,8 @@ id: workflow
 props:
   coarType: workflow
   dataCiteType: Workflow
-  submission: 'false'
-relatedURI:
-  COAR: http://purl.org/coar/resource_type/c_393c
+  submission: "false"
+
 title:
   cs: Workflow
   en: Workflow
