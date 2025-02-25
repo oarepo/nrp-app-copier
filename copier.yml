@@ -19,7 +19,8 @@ languages:
   type: str
   help: |
     List of languages to use in the repository, 
-    2 letter code separated by either comma or space
+    2 letter code separated by either comma or space.
+    English is implicit, do not include it.
 
 _jinja_extensions:
   - copier_templates_extensions.TemplateExtensionLoader
