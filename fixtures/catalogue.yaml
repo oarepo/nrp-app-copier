@@ -33,3 +33,8 @@ vocabulary-community-types:
       cs: Typy komunit
       en: Community types
   - source: community-types.yaml
+
+communities:
+  - writer: service
+    service: communities
+  - source: communities.yaml
