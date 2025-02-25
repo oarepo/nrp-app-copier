@@ -17,7 +17,9 @@ repository_description:
 
 languages:
   type: str
-  help: List of languages to use in the repository, 2 letter code
+  help: |
+    List of languages to use in the repository, 
+    2 letter code separated by either comma or space
 
 _jinja_extensions:
   - copier_templates_extensions.TemplateExtensionLoader
