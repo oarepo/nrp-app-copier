@@ -69,13 +69,6 @@ config.configure_vocabulary(
     dump_options=True,
 )
 
-# TODO:
-# UI_DOCUMENTS_SEARCH
-# UI_GLOBAL_SEARCH
-# UI_COMMUNITIES
-# UI_OVERRIDES
-
-
 # Feel free to add/override configuration options here. List of options can be
 # found in the Invenio source code:
 # https://github.com/inveniosoftware/invenio-app-rdm/blob/master/invenio_app_rdm/config.py
