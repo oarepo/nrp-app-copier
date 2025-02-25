@@ -58,6 +58,19 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+
+/* Override defaults from invenio-theme that cannot be overriden other way */
+html.cover-page {
+  background-color: @coverPageBackgroundColor !important;
+}
+.ui.page-header {
+    #invenio-burger-menu-icon {
+        .navicon, .navicon::before, .navicon::after {
+            background: @white !important;
+        }
+    }
+}
+
 :not(.ui.grid).only {
 
   &.mobile:not(.tablet) {

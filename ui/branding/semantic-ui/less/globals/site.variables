@@ -2,43 +2,37 @@
     Invenio NRP Site Styling Variables
 ***********************************************/
 
-@fontName: "Roboto";
-@importGoogleFonts: false;
-@fontSizeBase: 1rem;
-@fontSize: 1rem;
-
 /*-------------------
     Brand Colors
 --------------------*/
 
-@primaryColor: @brandColor;
-@secondaryColor: #ff5b7f;
+@livelyGreen: #008691;
+@pink: #ff5b7f;
 
-@lightPrimaryColor: lighten(@blue, 50);
-@lightSecondaryColor: lighten(@purple, 50);
+@primaryColor: @livelyGreen;
+@secondaryColor: @pink;
+@darkGrey: #707075;
+@lightGrey: #e4e4e3;
+@black: #040305;
+@white: #ffffff;
+
+@lightPrimaryColor: lighten(@primaryColor, 50);
+@lightSecondaryColor: lighten(@primaryColor, 50);
+@primaryDarkenColor: @darkGrey;
 
 @selectionBackground: @lightGrey;
-@celledBorderColor: @blue;
+@celledBorderColor: @primaryColor;
 
-@linkHoverUnderline: underline;
-@highlightHeaderColor: #ededed;
-
-@primaryColor: #0377cd;
-@secondaryColor: #fb8273;
-@featuredListBackgroundColor: #4899DB;
-@primaryDarkenColor: #0267b2;
-
-// backwards compatibility
+// for backwards compatibility
 @brandColor: @primaryColor;
 @brand-primary:@primaryColor;
-
 
 /*-------------------
       Site Colors
 --------------------*/
 
-@darkGray: #333;
-@green: #048622;
+@green: #00b691;
+@red: darken(@pink, 20);
 @signupColor: @green;
 
 @accessRightOpen: @green;
@@ -60,16 +54,17 @@
 @navbar_background_image: linear-gradient(165deg, #008691, #008691, #00848e, #007e88, #00737d, #006971, #00636b, #006169, #006169);
 @navbar_background_color: @brandColor;
 
+@coverPageBackgroundColor: @livelyGreen;
+
 @errorTextColor: #9f3a38;
 @focusedFormBorderColor: #2185d0;
 @focusedFormMutedBorderColor: #2185d0;
 
-@highlightHeaderColor: #ededed;
+@highlightHeaderColor: @lightGrey;
 @highlightBackgroundColor: @highlightHeaderColor;
 @highlightBackgroundColorHover:  darken(saturate(@highlightHeaderColor, 20), 15, relative);
 @highlightLandingPageBackgroundColor: rgba(173, 206, 224, 0.52);
 @selectedColor: #ededed;
-
 
 @navbarBackgroundImage: linear-gradient(
   12deg,
@@ -93,7 +88,6 @@
 @linkHoverColor: darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline: underline;
 
-
 /*-------------------
     Breakpoints
 --------------------*/
@@ -107,13 +101,12 @@
       Fonts
 --------------------*/
 
-
+@importGoogleFonts: false;
 @fontSizeBase: 14px;
-@font-size-small: 12px;
-@font-size-tiny: 10px;
-@font-size-massive: 36px;
-@fontName: 'Helvetica';
-
+@font-size-small: 0.9rem;
+@font-size-tiny: 0.8rem;
+@font-size-massive: 2.5rem;
+@fontName: 'Roboto';
 
 /*-------------------
      Em Sizes
