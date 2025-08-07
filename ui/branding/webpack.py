@@ -7,9 +7,7 @@ theme = WebpackThemeBundle(
     themes={
         "semantic-ui": {
             "entry": {},
-            "dependencies": {
-                "react-searchkit": "^2.0.0",
-            },
+            "dependencies": {},
             "devDependencies": {},
             "aliases": {
                 "../../theme.config$": "less/theme.config",

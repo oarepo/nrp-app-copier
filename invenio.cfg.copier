@@ -19,17 +19,17 @@ config.configure_generic_parameters(
 {%- endif %}
 )
 
-config.configure_communities(
-    # if you have different community roles than owner, curator and member,
-    # you can specify them here
-)
+# config.configure_communities(
+#     # if you have different community roles than owner, curator and member,
+#     # you can specify them here
+# )
 
-config.register_workflow(
-    "default",
-    _("Default deposition workflow"),
-    "common.workflows.default.DefaultWorkflowPermissions",
-    "common.workflows.default.DefaultWorkflowRequests",
-)
+# config.register_workflow(
+#     "default",
+#     _("Default deposition workflow"),
+#     "common.workflows.default.DefaultWorkflowPermissions",
+#     "common.workflows.default.DefaultWorkflowRequests",
+# )
 
 config.configure_cron()
 
@@ -52,22 +52,22 @@ config.configure_cron()
 #               env.INVENIO_DATACITE_BIOCEV_PASSWORD)
 
 # vocabularies:
-config.configure_vocabulary(
-    code="languages",
-    name=_("Languages"),
-    description=_("Language definitions vocabulary."),
-    props={
-        "alpha3Code": {
-            "description": _("ISO 639-2 standard 3-letter language code"),
-            "icon": None,
-            "label": _("Alpha3 code (English)"),
-            "multiple": False,
-            "placeholder": "eng, cze...",
-            "search": False,
-        },
-    },
-    dump_options=True,
-)
+# config.configure_vocabulary(
+#     code="languages",
+#     name=_("Languages"),
+#     description=_("Language definitions vocabulary."),
+#     props={
+#         "alpha3Code": {
+#             "description": _("ISO 639-2 standard 3-letter language code"),
+#             "icon": None,
+#             "label": _("Alpha3 code (English)"),
+#             "multiple": False,
+#             "placeholder": "eng, cze...",
+#             "search": False,
+#         },
+#     },
+#     dump_options=True,
+# )
 
 # Feel free to add/override configuration options here. List of options can be
 # found in the Invenio source code:

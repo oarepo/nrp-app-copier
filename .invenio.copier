@@ -1,0 +1,23 @@
+[cli]
+flavour = RDM
+javascript_package_manager = pnpm
+python_package_manager = uv
+
+[cookiecutter]
+project_name = {{ repository_human_name }}
+project_shortname = {{repository_name}}
+package_name = {{repository_name}}
+project_site = {{repository_name}}.com
+author_name = 
+author_email = 
+year = 
+database = postgresql
+search = opensearch2
+file_storage = S3
+development_tools = yes
+site_code = no
+use_reduced_vocabs = no
+_template = https://github.com/oarepo/nrp-app-copier.git
+_output_dir = .
+_repo_dir = .
+_checkout = rdm-13
