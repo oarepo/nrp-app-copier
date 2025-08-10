@@ -24,7 +24,10 @@ languages:
 
 _jinja_extensions:
   - copier_templates_extensions.TemplateExtensionLoader
-  - nrp_devtools.copier_extensions.NRPExtension
-  - nrp_devtools.copier_extensions.ContextUpdater
+  - copier.py:NRPExtension
+  - copier.py:ContextUpdater
 
 _templates_suffix: .copier
+
+_exclude: 
+  - copier.py
