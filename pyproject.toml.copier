@@ -7,6 +7,7 @@ authors = []
 dependencies = [
     "json5",
     "oarepo[s3,rdm]>=13.0.2,<14.0.0",
+    "oarepo-runtime>=2.0.0dev0,<3.0.0",
     "python-dotenv",
     "marshmallow-i18n-messages",
 #    "oarepo-communities==5.*",
