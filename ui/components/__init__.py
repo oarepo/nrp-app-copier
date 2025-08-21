@@ -1,6 +1,5 @@
-from oarepo_ui.resources.config import TemplatePageUIResourceConfig
-from oarepo_ui.resources.resource import TemplatePageUIResource
 from flask import redirect
+from oarepo_ui.resources import TemplatePageUIResource, TemplatePageUIResourceConfig
 
 
 class ComponentsResourceConfig(TemplatePageUIResourceConfig):
