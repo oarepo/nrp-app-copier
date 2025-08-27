@@ -29,5 +29,4 @@ _jinja_extensions:
 
 _templates_suffix: .copier
 
-_exclude: 
-  - copier.py
+_subdirectory: template
