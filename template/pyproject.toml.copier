@@ -21,6 +21,7 @@ dependencies = [
 #    "oarepo-requests==2.*",
 #    "oarepo-vocabularies==2.*",
 #    "oarepo-workflows==1.*",
+     "oarepo-theme==1.*"
 ]
 requires-python = ">=3.13,<3.14"
 
