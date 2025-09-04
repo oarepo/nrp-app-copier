@@ -25,6 +25,9 @@ dependencies = [
 ]
 requires-python = ">=3.13,<3.14"
 
+[tool.uv.sources]
+oarepo-theme = { path = "../../github.com/oarepo/theme" }
+
 [project.entry-points."invenio_assets.webpack"]
 branding = "ui.branding.webpack:theme"
 i18n = "i18n.webpack:theme"

@@ -9,12 +9,7 @@ theme = WebpackThemeBundle(
             "entry": {},
             "dependencies": {},
             "devDependencies": {},
-            "aliases": {
-                "../../theme.config$": "less/theme.config",
-                "../../less/site": "less/site",
-                "../../less": "less",
-                "@less": "less",
-            },
+            "aliases": {},
         }
     },
 )
