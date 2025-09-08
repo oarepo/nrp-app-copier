@@ -2,7 +2,6 @@
 flavour = RDM
 javascript_package_manager = pnpm
 python_package_manager = uv
-search_port = 9400
 
 [cookiecutter]
 project_name = {{ repository_human_name }}
