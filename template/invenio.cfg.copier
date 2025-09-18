@@ -8,15 +8,18 @@ config.initialize_glitchtip()
 config.initialize_i18n()
 
 config.configure_generic_parameters(
-    code="{{repository_name}}",
-    name=_("{{ repository_human_name }}"),
-    description=_("{{ repository_description }}"),
 {%- if languages|length > 0 %}
     languages=({%- for lang in languages %}
         ("{{ lang|trim|lower }}", _("{{ lang|to_language_name }}")),
 {%- endfor %}
     ),
 {%- endif %}
+)
+
+config.configure_ui(
+    code="{{repository_name}}",
+    name=_("{{ repository_human_name }}"),
+    description=_("{{ repository_description }}"),
 )
 
 # config.configure_communities(
