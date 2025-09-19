@@ -356,7 +356,7 @@ vite.config.ts.timestamp-*
 #
 # OARepo specific gitignore
 #
-# .runner.sh
+.runner.sh
 .env-services
 .eslintrc.yaml
 .mypy.ini
