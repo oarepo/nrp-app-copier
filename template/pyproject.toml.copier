@@ -30,9 +30,6 @@ branding = "ui.branding.webpack:theme"
 i18n = "i18n.webpack:theme"
 components = "ui.components.webpack:theme"
 
-[project.entry-points."invenio_base.blueprints"]
-components = "ui.components:create_blueprint"
-
 [project.entry-points."invenio_i18n.translations"]
 translations = "i18n"
 
