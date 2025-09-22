@@ -98,7 +98,7 @@
 --------------------*/
 
 @importGoogleFonts: false;
-@emSize: 16px;
+@emSize: 14px;
 @fontSize: 14px;
 @fontSizeBase: 14px;
 @font-size-small: 0.9rem;
