@@ -375,3 +375,9 @@ dl.details-list {
     }
   }
 }
+// prevent right hand pop up menu to stretch too much
+@media all and (max-width: @largestTabletScreen) {
+  #invenio-menu {
+    width: auto !important;
+  }
+}
