@@ -12,7 +12,7 @@ dependencies = [
     "oarepo-model>=0.1.0dev0,<1.0.0",
     "oarepo-rdm>=1.0.0dev0,<2.0.0",
     "oarepo-theme>=1.0.0dev3,<2.0.0",
-    "oarepo-dashboard>2.0.0dev1,<3.0.0",
+    "oarepo-dashboard>=2.0.0dev1,<3.0.0",
     "python-dotenv",
     "marshmallow-i18n-messages",
 #    "oarepo-communities==5.*",
