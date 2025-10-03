@@ -1,1 +1,44 @@
 {% extends "invenio_app_rdm/header.html" %}
+
+{# Available template blocks:
+
+Template inheritance chain:
+1. invenio_theme/header.html (base template):
+   {%- block navbar %}  # Main navigation container
+     {%- block navbar_header %}  # Logo/brand section
+       {%- block brand %}  # Site logo or text
+       {%- endblock brand %}
+     {%- endblock navbar_header %}
+   {%- endblock navbar %}
+
+2. invenio_app_rdm/header.html (extends invenio_theme/header.html):
+   {%- block user_impersonation %}  # User impersonation warning
+   {%- endblock user_impersonation %}
+   
+   {%- block navbar %}  # Override of main navigation
+     {%- block navbar_header %}  # Logo section
+       {%- block brand %}  # Site logo/brand
+       {%- endblock brand %}
+     {%- endblock navbar_header %}
+     
+     {%- block navbar_search %}  # Search bar (if enabled)
+     {%- endblock navbar_search %}
+     
+     {%- block navbar_nav %}  # Main menu items
+     {%- endblock navbar_nav %}
+     
+     {%- block navbar_right %}  # Right side (notifications, login)
+     {%- endblock navbar_right %}
+   {%- endblock navbar %}
+   
+   {%- block site_banner %}  # Site-wide banner display
+   {%- endblock site_banner %}
+   
+   {%- block flashmessages %}  # Flash messages
+   {%- endblock flashmessages %}
+   
+   {%- block breadcrumbs %}  # Breadcrumbs
+   {%- endblock breadcrumbs %}
+
+You can override any of these blocks to customize the header.
+#}

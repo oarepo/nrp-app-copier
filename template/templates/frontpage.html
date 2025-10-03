@@ -1,1 +1,41 @@
 {% extends "invenio_app_rdm/frontpage.html" %}
+
+{# Available template blocks:
+
+Template inheritance chain:
+1. invenio_theme/frontpage.html (base template, extends config.BASE_TEMPLATE):
+   {%- block page_header %}  # includes invenio_theme/header_frontpage.html
+   {%- endblock page_header %}
+
+   {%- block page_body %}
+   {%- endblock page_body %}
+
+2. invenio_app_rdm/frontpage.html (extends invenio_theme/frontpage.html):
+   {%- block page_header %}  # includes invenio_app_rdm/header_frontpage.html
+   {%- endblock page_header %}
+
+   {%- block page_body %}
+     {%- block intro_section %}  # includes invenio_app_rdm/intro_section.html if show_intro_section is true
+     {%- endblock intro_section %}
+
+     {%- block top_banner %}  # renders communities_carousel()
+     {%- endblock top_banner %}
+
+     {%- block grid_section %}
+       {% block main_column %}
+         {% block main_column_content %}  # renders records_list()
+         {% endblock main_column_content %}
+       {% endblock main_column %}
+
+       {% block side_column %}
+         {% block side_column_content %}
+         {% endblock side_column_content %}
+       {% endblock side_column %}
+     {%- endblock grid_section %}
+
+     {%- block bottom_section %}
+     {%- endblock bottom_section %}
+   {%- endblock page_body %}
+
+You can override any of these blocks to customize the frontpage.
+#}
