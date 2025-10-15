@@ -34,6 +34,8 @@ config.configure_ui(
 #     "common.workflows.default.DefaultWorkflowRequests",
 # )
 
+config.configure_stats()
+
 config.configure_cron()
 
 # to enable datacite, uncomment the following lines
