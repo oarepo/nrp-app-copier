@@ -1,7 +1,7 @@
 [project]
 name = "{{repository_name}}"
 version = "1.0.0"
-description = "{{repository_description}}"
+description = "{{repository_description|replace('"', '\\"')|replace("\n", " ")}}"
 packages = []
 authors = []
 dependencies = [
