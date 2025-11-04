@@ -19,7 +19,7 @@ config.configure_generic_parameters(
 config.configure_ui(
     code="{{repository_name}}",
     name=_("{{ repository_human_name }}"),
-    description=_("{{ repository_description }}"),
+    description=_("""{{ repository_description }}"""),
 )
 
 # config.configure_communities(
