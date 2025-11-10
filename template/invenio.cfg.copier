@@ -41,20 +41,8 @@ config.configure_cron()
 # to enable datacite, uncomment the following lines
 # from common.config.datacite import (
 #               enable_datacite,
-#               datacite_default_credentials,
-#               datacite_community_prefix
 # )
 # enable_datacite(env)
-# datacite_default_credentials(
-#               env.INVENIO_DATACITE_PREFIX,
-#               env.INVENIO_DATACITE_USERNAME,
-#               env.INVENIO_DATACITE_PASSWORD)
-# )
-# datacite_community_prefix(
-#              "biocev",
-#               env.INVENIO_DATACITE_BIOCEV_PREFIX,
-#               env.INVENIO_DATACITE_BIOCEV_USERNAME,
-#               env.INVENIO_DATACITE_BIOCEV_PASSWORD)
 
 # vocabularies:
 # config.configure_vocabulary(
