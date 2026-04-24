@@ -387,3 +387,4 @@ pnpm-lock.yaml
 .invenio.private
 celerybeat-*
 .nrp
+.claude
