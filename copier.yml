@@ -18,9 +18,17 @@ repository_description:
 languages:
   type: str
   help: |
-    List of languages to use in the repository, 
+    List of languages to use in the repository,
     2 letter code separated by either comma or space.
     English is implicit, do not include it.
+
+use_ccmm:
+  type: bool
+  help: |
+    Will you add ccmm  (czech core metadata model) based models?
+    This will add the correct dependencies to your project.
+    Note that using this option will automatically use ccmm
+    vocabularies in place of default RDM vocabularies.
 
 _jinja_extensions:
   - copier_templates_extensions.TemplateExtensionLoader
