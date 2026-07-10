@@ -385,3 +385,4 @@ pnpm-lock.yaml
 celerybeat-*
 .nrp
 .claude
+.runner*
