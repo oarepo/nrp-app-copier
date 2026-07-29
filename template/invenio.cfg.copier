@@ -75,6 +75,15 @@ config.configure_stats()
 
 config.configure_cron()
 
+# file upload quotas and file-related toggles
+config.configure_files(
+    max_file_size=1 * 10**9,
+    max_files_count=100,
+    max_total_size=5 * 10**9,
+    allow_metadata_only_records=True,
+    allow_empty_files=None,
+)
+
 # to enable datacite, uncomment the following lines
 # from common.config.datacite import (
 #               enable_datacite,
