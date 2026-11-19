@@ -1,3 +1,5 @@
+import os
+
 from invenio_i18n import lazy_gettext as _
 import oarepo_config as config
 from oarepo_config import CommunityWorkflow, IndividualWorkflow, configure_workflows
@@ -8,6 +10,8 @@ config.initialize_glitchtip()
 # i18n
 config.initialize_i18n()
 
+env = config.load_configuration_variables()
+
 config.configure_generic_parameters(
 {%- if languages|length > 0 %}
     languages=({%- for lang in languages %}
@@ -16,6 +20,14 @@ config.configure_generic_parameters(
     ),
 {%- endif %}
 )
+
+if os.environ.get("FLASK_DEBUG"):
+    # Flask-DebugToolbar's base.html injects an inline <script> that our
+    # script-src CSP blocks (no 'unsafe-inline'/nonce), which breaks the
+    # toolbar (DEBUG_TOOLBAR_STATIC_PATH is not defined) in local dev.
+    # Secure headers aren't protecting anything useful in debug mode.
+    APP_ENABLE_SECURE_HEADERS = False
+    DEBUG_TB_INTERCEPT_REDIRECTS = False
 
 config.configure_ui(
     code="{{repository_name}}",
