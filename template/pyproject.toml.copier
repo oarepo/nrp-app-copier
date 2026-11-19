@@ -29,9 +29,6 @@ dev = [
 i18n = "i18n.webpack:theme"
 components = "ui.components.webpack:theme"
 
-[project.entry-points."invenio_db.alembic"]
-repository = "common:alembic"
-
 [tool.uv.build-backend]
 module-root = ""
 module-name = ["common", "i18n", "ui"]
