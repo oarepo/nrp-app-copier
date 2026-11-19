@@ -85,7 +85,11 @@ configure_workflows(
     CommunityWorkflow(code="community", label=_("Default Community Workflow")),
 )
 
-config.configure_stats()
+config.configure_stats(
+    # See: https://nrp-cz.github.io/docs/customize/configure/reference#configure_stats
+    # A file fetched by the in-page previewer is not counted as a download.
+    count_preview_downloads=False,
+)
 
 config.configure_cron()
 
@@ -96,6 +100,18 @@ config.configure_files(
     max_total_size=5 * 10**9,
     allow_metadata_only_records=True,
     allow_empty_files=None,
+    # Additional quota users/admins may grant on top of the default record quota.
+    max_additional_quota_size=0,
+    # "Download all" zips the files on the fly in a web worker that stays busy
+    # for the whole download, so bound it. Larger records offer per-file downloads.
+    max_archive_download_size=1 * 10**9,
+)
+
+# OAI-PMH endpoint, required configuration
+config.configure_oai(
+    # See: https://nrp-cz.github.io/docs/customize/configure/reference#configure_oai
+    repository_name="{{ repository_human_name }}",
+    admin_emails=["{{ admin_email | trim }}"],
 )
 
 # to enable datacite, uncomment the following lines

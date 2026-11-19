@@ -22,6 +22,17 @@ languages:
     2 letter code separated by either comma or space.
     English is implicit, do not include it.
 
+admin_email:
+  type: str
+  help: |
+    E-mail address of the repository administrator.
+    It is published as the administrative contact of the repository
+    (e.g. in the OAI-PMH Identify response).
+  validator: >-
+    {% if not (admin_email | trim | regex_search('^[^@\s]+@[^@\s]+\.[^@\s]+$')) %}
+    Please enter a valid e-mail address.
+    {% endif %}
+
 use_ccmm:
   type: bool
   help: |
