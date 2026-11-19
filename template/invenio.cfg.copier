@@ -24,7 +24,7 @@ config.configure_ui(
 )
 
 config.configure_communities(
-    # Configure custom community roles if not using the default (owner, curator, member).
+    # Configure custom community roles if not using the default (owner, curator, reader).
     # Leave empty to use default roles.
     # See: https://nrp-cz.github.io/docs/customize/configure/reference#configure_communities
     communities_roles=[
@@ -36,14 +36,16 @@ config.configure_communities(
             description=_("Can manage community."),
             is_owner=True,
             can_manage=True,
-            can_manage_roles=["owner", "curator", "member", "submitter"],
+            can_curate=True,
+            can_manage_roles=["owner", "curator", "reader", "submitter"],
         ),
         dict(
             name="curator",
             title=_("Curator"),
             description=_("Can curate records."),
             can_manage=True,
-            can_manage_roles=["member", "submitter"],
+            can_curate=True,
+            can_manage_roles=["reader", "submitter"],
         ),
         dict(
             name="submitter",
@@ -53,8 +55,8 @@ config.configure_communities(
             can_manage_roles=[],
         ),
         dict(
-            name="member",
-            title=_("Member"),
+            name="reader",
+            title=_("Reader"),
             description=_("Community member with read permissions."),
         ),
     ]
