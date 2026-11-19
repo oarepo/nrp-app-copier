@@ -5,6 +5,7 @@ i18n:
     - {{ language }}
 {%- endfor %}
   babel_source_paths:
+    - invenio.cfg
     - common
     - ui
     - models
