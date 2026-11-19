@@ -10,9 +10,12 @@ dependencies = [
    # Optional oarepo-app extras that can be added to the list below:
    #   antivirus        - antivirus scanning of uploaded files (oarepo-antivirus)
    #   ark              - ARK persistent identifiers (oarepo-ark)
+{%- if not use_ccmm %}
+   #   ccmm             - Czech Core Metadata Model based models (ccmm-invenio)
+{%- endif %}
    #   llm              - LLM-based metadata checks (oarepo-checks)
    #   oaipmh-harvester - harvesting records from OAI-PMH sources (oarepo-oai-pmh-harvester)
-   "oarepo-app[ccmm,production]>=8.0.0,<9.0.0",
+   "oarepo-app[{% if use_ccmm %}ccmm,{% endif %}production]>=8.0.0,<9.0.0",
 ]
 requires-python = ">=3.14,<3.15"
 
