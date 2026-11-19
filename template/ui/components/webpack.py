@@ -10,7 +10,9 @@ theme = WebpackThemeBundle(
                 "components": "./js/custom-components.js",
             },
             "dependencies": {},
-            "devDependencies": {},
+            # less is pinned below 4.6: less 4.6 is published as ES modules only,
+            # while less-loader (used by the Invenio webpack build) loads it with require()
+            "devDependencies": {"less": "4.5.1"},
             "aliases": {},
         }
     },
