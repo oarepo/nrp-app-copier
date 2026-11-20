@@ -17,3 +17,5 @@ The files in this directory are generated – do not edit them by hand:
 
 In JS, import the repository translations with
 `import { i18next } from "@translations/i18next";`.
+
+See [https://nrp-cz.github.io/docs/customize/repository_ui/i18n](https://nrp-cz.github.io/docs/customize/repository_ui/i18n) for more details.
